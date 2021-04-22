@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="includes/functions.js"></script>
+    <link rel="stylesheet" href="styles/nerdStyle.css" />
+    <link rel="shortcut icon" href="#">
+		<title>Craft/E/Nerd/S</title>
+
+	</head>
+	
+	<body>
+		<div id="wrap">
+			
+			<div class="header">
+				<h2> <a href="index.php"> Craft/E/Nerd/S </a> </h2>
+			
+			
+			<div id="nav">
+				<ul>
+					<?php
+						$pages = array(
+							'Employee Login' => 'empLogin.php',
+							//'Manager Login' => 'adminLogIn.php',
+							'Time Off Request' => 'reqOff.php',
+							'New Employee' => 'newEmp.php'
+						);
+				
+						foreach ($pages as $k => $v){
+								echo '<li><a href=" ';
+								echo $v;
+								echo '">';
+								echo $k;
+								echo'</a></li>';
+							}
+				
+					?>
+				</ul>
+				</div>
+			</div>
+
+			<div class="page">
+			
+			
+			<div class="content">
