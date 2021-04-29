@@ -9,6 +9,7 @@ include('views/header.html');
 //if()
 ?>
 </br>
+<h2 align="center">Employee LogIn</h2>
 <form action="empInfo.php" method='post'>
 	<fieldset>
 		<legend>Enter Employee Login Information</legend>

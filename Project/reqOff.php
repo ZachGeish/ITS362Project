@@ -11,12 +11,12 @@
 
 ?>
 <h2 align="center"> Time Off Request</h2>
-<form action="reqOffConfim.php">
+<form action="reqOffConfirm.php" method="post">
 	
 	<fieldset>
-		<legend>Time Off Request</legend>
+		<legend>Enter Time Off Request</legend>
 	<p><label>Begining Date: </label><input type="date" name="begDate" required /></p></br>
-	<p><label>End Date: </label><input type="date" name="endDate" /></p></br>
+	<p><label>End Date: </label><input type="date" name="endDate" required /></p></br>
 	
 	<p><label>Begining Time: </label><input type="time" name="begTime" /></p></br>
 	<p><label>End Time:</label><input type="time" name="endTime" /></p></br>

@@ -16,15 +16,13 @@
 <!--send data to database and display -->
 <div class="row">
 	<div class="column">
-		<form action="empInfo.php" method='post'>
+		<form method='post'>
 			<fieldset>
 				<legend>Actions</legend>
-			<input type="button" value="Clock In" name="clockIn" id="clockIn"></br>
-			<input type="button" value="Clock Out" name="clockOut" id="clockOut"></br>
-			<input type="button" value="Break Out" name="breakOut" id="breakOut"></br>
-			<input type="button" value="Break In" name="breakIn" id="breakIn"></br>
-			
-			
+					<button type="button" id="clockIn" name="clockIn" onclick="cI()">Clock In</button></br>
+					<button type="button" id="clockOut" name="clockOut" onclick="cO()">Clock Out</button></br>
+					<button type="button" id="breakOut" name="breakOut" onclick="bO()">Break Out</button></br>
+					<button type="button" id="breakIn" name="breakin" onclick="bI()">Break In</button></br>
 			</fieldset>
 		</form>
 	</div>
@@ -32,10 +30,10 @@
 <!-- div to display the above information when clicked-->
 	<fieldset>
 		<legend>Employee Information</legend>
-		<lbl>Time In: <input type="datetime-local" value="" id="timeIn"></lbl></br>
-		<lbl>Time Out: <input type="datetime-local" value="" id="timeOut"></lbl></br>
-		<lbl>Break Out: <input type="datetime-local" value="" id="breakTimeOut"></lbl></br>
-		<lbl>Break In: <input type="datetime-local" value="" id="breakTimeIn"></lbl></br>
+		<lbl>Time In: <p id="timeIn" name="timeIn"></p></lbl></br>
+		<lbl>Time Out: <p id="timeOut" name="timeOut"></p></lbl></br>
+		<lbl>Break Out: <p id="breakTimeOut" name="breakTimeOut"></p></lbl></br>
+		<lbl>Break In: <p id="breakTimeIn" name="breakTimeIn"></p></lbl></br>
 	</fieldset>
 </div>
 </div>
